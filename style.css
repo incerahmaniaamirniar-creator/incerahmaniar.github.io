@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
+
+header {
+    background: #6c63ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6c63ff, #ff6584);
+    color: white;
+}
+
+.section {
+    padding: 60px 80px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #6c63ff;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.python {
+    width: 30%;
+    background: #4caf50;
+}
+
+.html {
+    width: 30%;
+    background: #ff9800;
+}
+
+.mysql {
+    width: 30%;
+    background: #2196f3;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6c63ff;
+    color: white;
+    margin-top: 40px;
+}
