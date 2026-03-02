@@ -98,3 +98,25 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+.skill-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #6c63ff;
+    color: white;
+    transform: translateY(-5px);
+}
