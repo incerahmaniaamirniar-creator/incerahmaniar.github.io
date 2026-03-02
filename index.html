@@ -1,62 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Portofolio Ince Rahmaniar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 40px 20px;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #222;
-            color: white;
-            padding: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ince Rahmaniar Amir</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to right, #5f72bd, #9b23ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 35px;
+    border-radius: 18px;
+    width: 420px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 8px;
+    border-radius: 20px;
+    background: #ffffff;
+    width: 0;
+    animation: fill 2s forwards;
+}
+
+.python { width: 30%; }
+.html { width: 30%; }
+.javascript { width: 30%; }
+
+@keyframes fill {
+    from { width: 0; }
+}
+
+.contact {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact p {
+    margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+</style>
 </head>
+
 <body>
 
-<header>
+<div class="card">
+
     <h1>Ince Rahmaniar Amir</h1>
-    <p>Mahasiswa | Programmer | Web Developer</p>
-</header>
-
-<section>
-    <div class="card">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah mahasiswa yang tertarik pada pengembangan web dan sistem informasi.</p>
+    <div class="subtitle">
+        Mahasiswa Ilmu Komputer 2024 <br>
+        Universitas Halu Oleo
     </div>
 
-    <div class="card">
-        <h2>Project</h2>
-        <p>• Sistem Pemesanan Café<br>
-           • Project Basis Data<br>
-           • Website GitHub Pages</p>
+    <div class="bio">
+        Saya memiliki ketertarikan besar pada dunia digital dan teknologi yang terus berkembang. 
+        Bagi saya, belajar pemrograman bukan hanya tentang memahami kode, 
+        tetapi tentang bagaimana menciptakan sesuatu yang sederhana namun bermakna.
     </div>
-</section>
 
-<footer>
-    © 2026 Ince Rahmaniar Amir
-</footer>
+    <div class="section-title">Skills</div>
+
+    <div class="skill">
+        <div class="skill-name">Python — 30%</div>
+        <div class="skill-bar">
+            <div class="skill-fill python"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">HTML — 30%</div>
+        <div class="skill-bar">
+            <div class="skill-fill html"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">JavaScript — 30%</div>
+        <div class="skill-bar">
+            <div class="skill-fill javascript"></div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="section-title">Contact</div>
+        <p>Email: incerahmaniaamirniar@gmail.com</p>
+        <p>Instagram: @nceerhm</p>
+    </div>
+
+    <div class="footer">
+        © 2026 | Personal Website
+    </div>
+
+</div>
 
 </body>
 </html>
