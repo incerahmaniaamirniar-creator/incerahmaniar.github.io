@@ -145,6 +145,25 @@ footer{
     transition:all 0.8s ease;
 }
 
+.contact-box {
+    margin-top: 20px;
+    background: #ffe6f0;
+    padding: 25px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contact-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
 .show{
     opacity:1;
     transform:translateY(0);
