@@ -1,15 +1,23 @@
-function scrollToSection(id){
-    document.getElementById(id).scrollIntoView({behavior:"smooth"});
-}
-
-const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
+// Smooth scroll button
+document.getElementById("btnTentang").addEventListener("click", function(){
+    document.getElementById("tentang").scrollIntoView({
+        behavior:"smooth"
     });
 });
 
-document.querySelectorAll(".hidden").forEach(el=>{
-    observer.observe(el);
-});
+// Scroll reveal animation
+function reveal(){
+    const reveals = document.querySelectorAll(".reveal");
+
+    for(let i = 0; i < reveals.length; i++){
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if(elementTop < windowHeight - elementVisible){
+            reveals[i].classList.add("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
