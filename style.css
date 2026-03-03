@@ -1,138 +1,151 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fffaf5;
-    color: #333;
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to right,#ffe6f0,#fff5e6);
+    color:#333;
 }
 
 /* HEADER */
-header {
-    background: linear-gradient(90deg, #ff758c, #ff7eb3);
-    padding: 15px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 25px;
-    font-weight: 500;
-    transition: 0.3s;
+.logo{
+    font-weight:700;
+    color:#ff4d88;
 }
 
-nav a:hover {
-    opacity: 0.7;
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#555;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4d88;
 }
 
 /* HERO */
-.hero {
-    height: 90vh;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 100px;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: #ff4d6d;
+.hero-text h1{
+    font-size:38px;
+    color:#ff4d88;
 }
 
-.hero button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 25px;
-    background: #ff4d6d;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+.hero-text p{
+    margin:15px 0;
 }
 
-.hero button:hover {
-    transform: scale(1.1);
+.hero button{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+
+.hero-img img{
+    width:220px;
 }
 
 /* SECTION */
-.section {
-    padding: 80px 100px;
-    text-align: center;
+.section{
+    padding:80px 100px;
+    text-align:center;
 }
 
-.section h2 {
-    margin-bottom: 30px;
-    color: #ff4d6d;
+.section h2{
+    margin-bottom:25px;
+    color:#ff4d88;
 }
 
-/* SKILL */
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+/* SKILLS */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.skill-card {
-    background: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    cursor: pointer;
+.skill-card{
+    background:white;
+    padding:15px 30px;
+    border-radius:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
 }
 
-.skill-card:hover {
-    background: #ff4d6d;
-    color: white;
-    transform: translateY(-8px);
+.skill-card:hover{
+    background:#ff4d88;
+    color:white;
+    transform:translateY(-8px);
 }
 
 /* PROJECT */
-.project-card {
-    max-width: 600px;
-    margin: auto;
-    padding: 25px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
+.project-card{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+.project-card img{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
 }
 
 /* FOOTER */
-footer {
-    background: linear-gradient(90deg, #ff758c, #ff7eb3);
-    text-align: center;
-    padding: 20px;
-    color: white;
+footer{
+    background:#ff4d88;
+    text-align:center;
+    padding:20px;
+    color:white;
 }
 
 /* ANIMASI */
-.hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
 }
 
-.show {
-    opacity: 1;
-    transform: translateY(0);
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
