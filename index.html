@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Ince Rahmaniar Amir</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,28 +20,28 @@
 </header>
 
 <section id="home" class="hero">
-    <h1 class="fade-in">Halo, Saya Ince Rahmaniar Amir</h1>
-    <p class="fade-in">Mahasiswa Ilmu Komputer 2024 - Universitas Halu Oleo</p>
-    <a href="#about" class="btn fade-in">Lihat Selengkapnya</a>
+    <h1>Halo, Saya Ince Rahmaniar Amir</h1>
+    <p>Mahasiswa Ilmu Komputer 2024 - Universitas Halu Oleo</p>
+    <button onclick="scrollToSection('about')">Lihat Selengkapnya</button>
 </section>
 
 <section id="about" class="section hidden">
     <h2>Tentang Saya</h2>
     <p>
-        Saya memiliki ketertarikan besar di bidang pengembangan web 
-        dan sistem berbasis database. Saya senang membangun sesuatu 
-        yang sederhana namun bermanfaat.
+        Saya adalah mahasiswa Ilmu Komputer yang tertarik pada pengembangan web 
+        dan sistem berbasis database. Saya senang belajar teknologi baru dan 
+        membangun solusi digital yang sederhana namun bermanfaat.
     </p>
 </section>
 
 <section id="skills" class="section hidden">
     <h2>Skill</h2>
-    <div class="skill-box">
-        <div class="skill-item">Python</div>
-        <div class="skill-item">HTML</div>
-        <div class="skill-item">CSS</div>
-        <div class="skill-item">JavaScript</div>
-        <div class="skill-item">MySQL</div>
+    <div class="skills-container">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">MySQL</div>
     </div>
 </section>
 
@@ -49,8 +50,9 @@
     <div class="project-card">
         <h3>Sistem Pemesanan Cafe Berbasis Web</h3>
         <p>
-            Sistem ini dibuat untuk mempermudah pelanggan dalam melakukan 
-            pemesanan menu secara online dengan pengelolaan data menggunakan MySQL.
+            Sistem berbasis web untuk mempermudah pelanggan melakukan pemesanan 
+            menu secara online. Menggunakan HTML, CSS, JavaScript dan MySQL 
+            untuk pengelolaan data pesanan.
         </p>
     </div>
 </section>
